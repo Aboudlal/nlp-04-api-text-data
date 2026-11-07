@@ -1,53 +1,29 @@
-# nlp-04-api-text-data
+# Project 4 - Airport Weather Report Analysis
 
 [![Python 3.14](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](pyproject.toml)
-[![CI](https://github.com/denisecase/nlp-04-api-text-data/actions/workflows/ci-python-zensical.yml/badge.svg)](https://github.com/denisecase/nlp-04-api-text-data/actions/workflows/ci-python-zensical.yml)
-[![Documentation](https://img.shields.io/badge/docs-site-blue?logo=github)](https://denisecase.github.io/nlp-04-api-text-data/)
 
 [![uv managed](https://img.shields.io/badge/uv-managed-DE5FE9)](https://docs.astral.sh/uv/)
 [![ty type checked](https://img.shields.io/badge/ty-type_checked-2F80ED)](https://docs.astral.sh/ty/)
 [![Zensical docs](https://img.shields.io/badge/Zensical-docs-purple)](https://zensical.org/)
 [![MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
-> Acquire, validate, and transform JSON data from web APIs using Python.
+> Prepare airport weather reports from a web API for text analysis using Python.
 
 ## Project Overview
 
-Author: Denise Case
+Author: Abdellah Boudlal
 
-Date: 2026 October
+Date: 2026-11
 
-Fourth project in the Web Mining and Applied NLP course.
-
-This project introduces structured data acquisition
-using web APIs.
-
-The goal is to retrieve JSON data,
-validate its structure,
-transform it into an analysis-ready dataset,
-and persist the results.
-
-The project demonstrates an Extract, Validate,
-Transform, Load (EVTL) pipeline.
-
-The project is configured in
-[pyproject.toml](pyproject.toml).
+This project is part of the Web Mining and Applied NLP course. I plan to adapt the Extract, Validate, Transform, and Load (EVTL) pipeline to collect airport weather reports and compare how often reports mention fog or rain across selected airports.
 
 ## Data
 
-The example retrieves JSON records from
-[JSONPlaceholder](https://jsonplaceholder.typicode.com/posts),
-a public demonstration API.
+The starter pipeline retrieves sample posts from [JSONPlaceholder](https://jsonplaceholder.typicode.com/posts). For my custom project, I plan to retrieve airport weather reports from a public API and check that each record includes an airport identifier and report text.
 
-Each record includes fields such as:
+I will calculate report lengths, flag mentions of fog or rain, and export the processed records to CSV for analysis.
 
-- User identifier.
-- Post identifier.
-- Title.
-- Body text.
-
-The pipeline preserves the raw JSON data
-and produces a structured CSV dataset.
+This project is based on the [original example by Denise Case](https://github.com/denisecase/nlp-04-api-text-data).
 
 ## Approach
 
@@ -93,7 +69,7 @@ From a VS Code terminal in the project root:
 uv run python -m nlp.pipeline_api_json
 ```
 
-## Results
+## Starter Pipeline Results
 
 The pipeline retrieves JSON records,
 checks their structure,
@@ -129,7 +105,7 @@ uv run python -m pytest
 
 ## Project Documentation
 
-The [hosted documentation site](https://denisecase.github.io/nlp-04-api-text-data/)
+The [original example documentation site](https://denisecase.github.io/nlp-04-api-text-data/)
 is published using Zensical and GitHub Pages.
 
 The documentation site is used to present the project report,
@@ -143,8 +119,8 @@ to check project files and publish the docs.
 
 GitHub Actions include:
 
-- [CI: Python and Documentation Checks](https://github.com/denisecase/nlp-04-api-text-data/actions/workflows/ci-python-zensical.yml)
-- [CD: Documentation Deployment](https://github.com/denisecase/nlp-04-api-text-data/actions/workflows/deploy-zensical.yml)
+- [CI: Python and Documentation Checks](.github/workflows/ci-python-zensical.yml)
+- [CD: Documentation Deployment](.github/workflows/deploy-zensical.yml)
 
 ## Developer Reference
 
@@ -229,7 +205,7 @@ testing, documentation, and code quality.
 
 ## Links
 
-- [Hosted Documentation](https://denisecase.github.io/nlp-04-api-text-data/)
+- [Original Example Documentation](https://denisecase.github.io/nlp-04-api-text-data/)
 - [Professional Python Workflow Guide](https://denisecase.github.io/pro-analytics-02/)
 - [Citation](CITATION.cff)
 - [License](LICENSE)
