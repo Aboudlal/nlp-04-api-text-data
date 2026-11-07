@@ -72,6 +72,7 @@ def run_transform(
         [
             pl.col("title").str.len_chars().alias("title_length"),
             pl.col("body").str.len_chars().alias("body_length"),
+            pl.col("body").str.count_matches(r"\S+").alias("body_word_count"),
         ]
     )
 
