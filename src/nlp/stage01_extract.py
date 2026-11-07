@@ -1,6 +1,7 @@
 """stage01_extract.py - Stage 01: Extract.
 
-NO EDITS REQUIRED IN THIS FILE (if paths have not changed.)
+Author: Abdellah Boudlal
+Date: 2026-11
 
 Source: API
 Sink: raw JSON object + raw JSON file

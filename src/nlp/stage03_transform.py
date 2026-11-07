@@ -1,6 +1,7 @@
 """stage03_transform.py.
 
-(EDIT YOUR VERSION OF THIS FILE)
+Author: Abdellah Boudlal
+Date: 2026-11
 
 Source: validated JSON object
 Sink: Polars DataFrame

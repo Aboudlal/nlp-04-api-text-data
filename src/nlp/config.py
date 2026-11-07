@@ -1,6 +1,7 @@
 """config.py.
 
-(EDIT YOUR VERSION OF THIS FILE)
+Author: Abdellah Boudlal
+Date: 2026-11
 
 Purpose
 
